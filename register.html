@@ -78,7 +78,7 @@
     <form id="dataForm">
         <h4> Get Users Data</h4>
         <button type="submit">Get it now</button>
-    
+        <div id="response-message"></div>
         </form>
 	
 
@@ -95,6 +95,7 @@
             document.getElementById("nameError").innerText = "";
             document.getElementById("emailError").innerText = "";
             document.getElementById("passwordError").innerText = "";
+            const responseMessage = document.getElementById('response-message');
 
             // Validate Name
             if (name === "") {
@@ -141,6 +142,7 @@
 			}
 			
 			fetchData();
+
 			
 			});
     </script>
